@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+.navBar-btn {
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.open-btn {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
+.navList {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	transform: translateX(-100%);
+	transition: transform .3s ease-in-out; 
+}
+
+.navList.visible {
+	transform: translateX(0);
+}
+
+.nav-black {
+	background-color: rgb(34, 31, 31);
+	width: 60%;
+	max-width: 480px;
+	min-width: 320px;
+	transition-delay: .4s;
+}
+
+.nav-black.visible {
+	transition-delay: 0s;
+}
+
+.nav-red {
+	background-color: rgb(229, 9, 20);
+	transition-delay: .2s; 
+	width: 95%;
+}
+
+.nav-red.visible {
+	transition-delay: .2s;
+}
+
+.nav-white {
+	background-color: #fff;
+	padding: 40px;
+	position: relative;
+	transition-delay: 0s; 
+	width: 95%;
+}
+
+.nav-white.visible {
+	transition-delay: .4s;
+}
+
+.close-btn {
+	opacity: 0.3;
+	position: absolute;
+	top: 40px;
+	right: 30px;
+}
+
+.navList {
+	list-style-type: none;
+	padding: 0;
+}
+
+.navList li {
+	margin: 20px 0;
+}
+
+.navList li a {
+	color: rgb(34, 31, 31);
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.navList ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+.fa {
+	color: rgb(168, 24, 24);
+}
+
+.fa-hover:hover {
+color: rgb(34, 31, 31);
+}
+
+.bar1, .bar2, .bar3 {
+	width: 30px;
+	height: 2px;
+	background-color: #333;
+	margin: 5px 0;
+	transition: 0.4s;
+	background-color: red;
+	opacity: 1;
+}
+.bar1 {
+	width: 15px;
+
+	}
+.bar3 {
+	width: 15px;
+	float: right;
+	margin-top: 0;
+}
+
+@media screen and (max-width: 480px) {
+
+
+}
